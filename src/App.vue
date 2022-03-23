@@ -28,6 +28,10 @@ export default {
   color: white;
 }
 
+.container-fluid {
+  position: relative;
+}
+
 .msBackground {
   min-height: 950px;
   background-image: url(./assets/img/avadabarbers-homepage-hero-bg.jpg);

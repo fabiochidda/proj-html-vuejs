@@ -18,6 +18,24 @@
               </figure>
           </div>
       </div>
+      <div class="row flex-column g-3 msIcons">
+          <div class="col-auto">
+              <div class="jumbo-icon d-flex justify-content-center align-items-center flex-column">
+                  <div class="icon-content text-center">
+                    <i class="fa-brands fa-atlassian"></i>
+                    <p class="m-0">Demo</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-auto">
+              <div class="jumbo-icon d-flex justify-content-center align-items-center flex-column">
+                  <div class="icon-content text-center">
+                    <p class="m-0 msPrice">$ 39</p>
+                    <p class="m-0">On Sale</p>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
 </template>
 
@@ -56,4 +74,35 @@ button {
     color: burlywood;
     border: 1px solid burlywood;
 }
+
+.msIcons {
+    position: absolute;
+    top: 150px;
+    right: 10px;
+}
+
+.jumbo-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: white;
+
+    .fa-atlassian{
+        font-size: 25px;
+        color: black;
+    }
+
+    p {
+        color: black;
+    }
+
+    .msPrice {
+        font-size: 20px;
+        color: green;
+    }
+}
+
+
+
+
 </style>
