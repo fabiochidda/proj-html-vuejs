@@ -5,7 +5,7 @@
               <div class="jumbo-title">
                   <h2>Barber Shop</h2>
               </div>
-              <div class="jumbo-text">
+              <div class="jumbo-text py-4">
                   <p>The Pinnacle of Male Grooming</p>
               </div>
               <div class="jumbo-button">
@@ -30,9 +30,25 @@ export default {
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
+.jumbo-title {
+    display: contents;
+}
+
 h2 {
   font-size: 90px;
   font-family: 'Abril Fatface', cursive;
+  line-height: 150px;
+  position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    background-color: burlywood;
 }
 
 button {

@@ -35,4 +35,7 @@ export default {
   background-repeat: no-repeat;
 }
 
+ul li {
+  list-style: none;
+}
 </style>
