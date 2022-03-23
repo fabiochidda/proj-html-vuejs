@@ -72,7 +72,7 @@ h2::after {
 button {
     font-size: 20px;
     color: burlywood;
-    border: 1px solid burlywood;
+    border: 2px solid burlywood;
 }
 
 .msIcons {

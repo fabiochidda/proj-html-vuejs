@@ -4,18 +4,23 @@
       <Header />
       <Jumbotron />
     </div>
+    <div class="container-fluid p-0">
+      <ProBarber />
+    </div>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Jumbotron from './components/Jumbotron.vue'
+import ProBarber from './components/ProBarber.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     Jumbotron,
+    ProBarber,
   }
 }
 </script>
