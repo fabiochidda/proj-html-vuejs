@@ -7,6 +7,9 @@
     <div class="container-fluid p-0">
       <ProBarber />
     </div>
+    <div class="container-fluid">
+      <Services />
+    </div>
   </div>
 </template>
 
@@ -14,6 +17,7 @@
 import Header from './components/Header.vue'
 import Jumbotron from './components/Jumbotron.vue'
 import ProBarber from './components/ProBarber.vue'
+import Services from './components/Services.vue'
 
 export default {
   name: 'App',
@@ -21,6 +25,7 @@ export default {
     Header,
     Jumbotron,
     ProBarber,
+    Services,
   }
 }
 </script>
