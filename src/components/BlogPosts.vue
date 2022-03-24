@@ -9,31 +9,13 @@
           </div>
       </div>
       <div class="row justify-content-center text-center pt-5">
-          <div class="col-3">
+          <div v-for="(el, i) in blogPosts" :key="i" class="col-3">
               <div class="msProductImage">
                   <figure>
-                      <img src="../assets/img/avadabarbers-second-blog-320x202.jpg" alt="">
+                      <img :src="el.image" alt="">
                   </figure>
-                  <h3 class="m-4">Avada Barbers Now Open</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam itaque provident animi facere similique quam.</p>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="msProductImage">
-                  <figure>
-                      <img src="../assets/img/avadabarbers-choosing-blog-320x202.jpg" alt="">
-                  </figure>
-                  <h3 class="m-4">Choosing The Right Barber</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam itaque provident animi facere similique quam.</p>                  
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="msProductImage">
-                  <figure>
-                      <img src="../assets/img/avadabarbers-ourservice-blog-320x202.jpg" alt="">
-                  </figure>
-                  <h3 class="m-4">Quick Service Guide</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam itaque provident animi facere similique quam.</p>                  
+                  <h3 class="m-4">{{el.title}}</h3>
+                  <p>{{el.text}}</p>
               </div>
           </div>
       </div>
@@ -48,6 +30,27 @@
 <script>
 export default {
     name: 'msBlogPosts',
+    data() {
+        return {
+            blogPosts: [
+                {
+                    image: require(`../assets/img/avadabarbers-second-blog-320x202.jpg`),
+                    title: 'Avada Barbers Now Open',
+                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam itaque provident animi facere similique quam.',
+                },
+                {
+                    image: require(`../assets/img/avadabarbers-choosing-blog-320x202.jpg`),
+                    title: 'Choosing The Right Barber',
+                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam itaque provident animi facere similique quam.',
+                },
+                {
+                    image: require(`../assets/img/avadabarbers-ourservice-blog-320x202.jpg`),
+                    title: 'Quick Service Guide',
+                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam itaque provident animi facere similique quam.',
+                },
+            ]
+        }
+    }
 }
 </script>
 

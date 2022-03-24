@@ -9,37 +9,15 @@
           </div>
       </div>
       <div class="row justify-content-center text-center p-5">
-          <div class="col-3">
+          <div v-for="(el, i) in reviews" :key="i" class="col-3">
               <div class="msReviewsImage">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et repellendus amet tempora incidunt, nemo obcaecati minima recusandae nisi vero ex rerum repudiandae facilis voluptatum commodi delectus perferendis nulla quas provident quis corporis non repellat. Veritatis!</p>
+                  <p>{{el.text}}</p>
                   <div class="msProfileImage">
                       <figure>
-                          <img src="../assets/img/avadabarbers-trimcut-gallery6-200x200.jpg" alt="">
+                          <img :src="el.image" alt="">
                       </figure>
                   </div>
-                  <p>John Doe</p>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="msReviewsImage">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et repellendus amet tempora incidunt, nemo obcaecati minima recusandae nisi vero ex rerum repudiandae facilis voluptatum commodi delectus perferendis nulla quas provident quis corporis non repellat. Veritatis!</p>
-                  <div class="msProfileImage">
-                      <figure>
-                          <img src="../assets/img/avadabarbers-trimcut-gallery7-200x201.jpg" alt="">
-                      </figure>
-                  </div>
-                  <p>Pete Jones</p>                  
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="msReviewsImage">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et repellendus amet tempora incidunt, nemo obcaecati minima recusandae nisi vero ex rerum repudiandae facilis voluptatum commodi delectus perferendis nulla quas provident quis corporis non repellat. Veritatis!</p>
-                  <div class="msProfileImage">
-                      <figure>
-                          <img src="../assets/img/avadabarbers-trimcut-gallery3-200x201.jpg" alt="">
-                      </figure>
-                  </div>
-                  <p>Mark Wilson</p>                  
+                  <p>{{el.name}}</p>
               </div>
           </div>
       </div>
@@ -49,6 +27,27 @@
 <script>
 export default {
     name: 'msReviews',
+    data() {
+        return {
+            reviews: [
+                {
+                    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et repellendus amet tempora incidunt, nemo obcaecati minima recusandae nisi vero ex rerum repudiandae facilis voluptatum commodi delectus perferendis nulla quas provident quis corporis non repellat. Veritatis!',
+                    image: require(`../assets/img/avadabarbers-trimcut-gallery6-200x200.jpg`),
+                    name: 'John Doe',
+                },
+                {
+                    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et repellendus amet tempora incidunt, nemo obcaecati minima recusandae nisi vero ex rerum repudiandae facilis voluptatum commodi delectus perferendis nulla quas provident quis corporis non repellat. Veritatis!',
+                    image: require(`../assets/img/avadabarbers-trimcut-gallery7-200x201.jpg`),
+                    name: 'Pete Jones',
+                },
+                {
+                    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et repellendus amet tempora incidunt, nemo obcaecati minima recusandae nisi vero ex rerum repudiandae facilis voluptatum commodi delectus perferendis nulla quas provident quis corporis non repellat. Veritatis!',
+                    image: require(`../assets/img/avadabarbers-trimcut-gallery3-200x201.jpg`),
+                    name: 'Mark Wilson',
+                },
+            ]
+        }
+    }
 }
 </script>
 
