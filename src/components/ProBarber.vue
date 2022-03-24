@@ -16,11 +16,11 @@ export default {
 @import '../assets/scss/colors.scss';
 
 .msBanner {
-    padding: 0;
-    height: 500px;
-    background-image: url(../assets/img/avadabarbers-about-introbackground.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+  padding: 0;
+  height: 500px;
+  background-image: url(../assets/img/avadabarbers-about-introbackground.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 h2 {
@@ -31,14 +31,14 @@ h2 {
 }
 
 button {
-    font-size: 20px;
-    color: $driftwood;
-    border: 2px solid $driftwood;
+  font-size: 20px;
+  color: $driftwood;
+  border: 2px solid $driftwood;
 }
 
 p {
-    font-weight: bold;
-    color: $driftwood;
+  font-weight: bold;
+  color: $driftwood;
 }
 
 </style>

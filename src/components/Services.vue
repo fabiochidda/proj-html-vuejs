@@ -19,7 +19,7 @@
               </div>
           </div>
       </div>
-      <div class="row text-center p-5">
+      <div class="row text-center pb-5">
           <div class="col-12 p-5">
               <button class="bg-transparent px-4 py-2" type="button">READ ABOUT OUR SERVICES</button>
           </div>
@@ -56,6 +56,10 @@ export default {
 
 <style scoped lang="scss">
 @import '../assets/scss/colors.scss';
+
+.container {
+    height: 800px;
+}
 
 .msServicesTitle {
     p {
