@@ -22,9 +22,7 @@
     <div class="container-fluid">
       <BlogPosts />
     </div>
-    <div class="container-fluid">
-      <Footer />
-    </div>
+    <Footer />
   </div>
 </template>
 

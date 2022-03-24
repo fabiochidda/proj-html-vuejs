@@ -12,7 +12,7 @@
                   <button class="bg-transparent px-4 py-2" type="button">LEARN MORE</button>
               </div>
           </div>
-          <div class="col-6">
+          <div class="col-6 msJumboImage">
               <figure>
                   <img src="../assets/img/avadabarbers_hero_focalmirror-600x825.png" alt="">
               </figure>
@@ -102,7 +102,11 @@ button {
     }
 }
 
-
+.msJumboImage {
+    img {
+        width: 90%;
+    }
+}
 
 
 </style>
