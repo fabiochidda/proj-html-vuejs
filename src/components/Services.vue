@@ -39,12 +39,12 @@ export default {
                     description: 'Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.',
                 },
                 {
-                    image: require(`../assets/img/avadabarbers-beardtrim-icon.png`),
+                    image: require(`../assets/img/avadabarbers-washndry-icon.png`),
                     title: 'Wash & Dry',
                     description: 'Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion.',
                 },
                 {
-                    image: require(`../assets/img/avadabarbers-trimcut-icon-before.png`),
+                    image: require(`../assets/img/avadabarbers-beardtrim-icon.png`),
                     title: 'Beard Tidy',
                     description: 'Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.',
                 },
