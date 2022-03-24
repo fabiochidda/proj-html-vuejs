@@ -47,9 +47,16 @@ export default {
 
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import '../assets/scss/colors.scss';
 
 .jumbo-title {
     display: contents;
+}
+
+.jumbo-text {
+    p {
+        color: $emperor;
+    }
 }
 
 h2 {
@@ -66,13 +73,13 @@ h2::after {
     bottom: 0;
     left: 0;
     width: 40%;
-    background-color: burlywood;
+    background-color: $driftwood;
 }
 
 button {
     font-size: 20px;
-    color: burlywood;
-    border: 2px solid burlywood;
+    color: $driftwood;
+    border: 2px solid $driftwood;
 }
 
 .msIcons {

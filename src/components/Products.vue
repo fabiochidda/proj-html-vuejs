@@ -52,6 +52,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/scss/colors.scss';
 
 .msProductsContainer {
     height: 900px;
@@ -64,32 +65,32 @@ export default {
 .msProductsTitle {
     p {
         font-weight: bold;
-        color: burlywood;
+        color: $driftwood;
         margin: 0;
     }
 
     h2 {
         font-size: 60px;
         font-family: 'Abril Fatface', cursive;
-        color: grey;
+        color: $silver-chalice;
     }
 }
 
 .msProduct {
     h3 {
         font-family: 'Abril Fatface', cursive;
-        color: burlywood;
+        color: $driftwood;
     }
 
     p {
-        color: burlywood;
+        color: $driftwood;
         margin: 0;
     }
 }
 
 button {
     font-size: 20px;
-    color: burlywood;
-    border: 2px solid burlywood;
+    color: $driftwood;
+    border: 2px solid $driftwood;
 }
 </style>

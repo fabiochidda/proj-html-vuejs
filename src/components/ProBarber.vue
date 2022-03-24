@@ -13,6 +13,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/scss/colors.scss';
 
 .msBanner {
     padding: 0;
@@ -25,18 +26,19 @@ export default {
 h2 {
   font-size: 70px;
   font-family: 'Abril Fatface', cursive;
+  color: $silver-chalice;
   line-height: 130px;
 }
 
 button {
     font-size: 20px;
-    color: burlywood;
-    border: 2px solid burlywood;
+    color: $driftwood;
+    border: 2px solid $driftwood;
 }
 
 p {
     font-weight: bold;
-    color: burlywood;
+    color: $driftwood;
 }
 
 </style>

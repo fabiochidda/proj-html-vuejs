@@ -55,36 +55,37 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/scss/colors.scss';
 
 .msServicesTitle {
     p {
         font-weight: bold;
-        color: burlywood;
+        color: $driftwood;
         margin: 0;
     }
 
     h2 {
         font-size: 70px;
         font-family: 'Abril Fatface', cursive;
-        color: grey;
+        color: $silver-chalice;
     }
 }
 
 .msProductImage {
     h3 {
-        color: burlywood;
+        color: $driftwood;
         font-family: 'Abril Fatface', cursive;
     }
 
     p {
-        color: black;
+        color: $emperor;
     }
 }
 
 button {
     font-size: 20px;
-    color: burlywood;
-    border: 2px solid burlywood;
+    color: $driftwood;
+    border: 2px solid $driftwood;
 }
 
 figure {

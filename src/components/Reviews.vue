@@ -17,7 +17,9 @@
                           <img :src="el.image" alt="">
                       </figure>
                   </div>
-                  <p>{{el.name}}</p>
+                  <div class="msProfileName">
+                      <p>{{el.name}}</p>
+                  </div>
               </div>
           </div>
       </div>
@@ -52,18 +54,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/scss/colors.scss';
 
 .msReviewsTitle {
     p {
         font-weight: bold;
-        color: burlywood;
+        color: $driftwood;
         margin: 0;
     }
 
     h2 {
         font-size: 70px;
         font-family: 'Abril Fatface', cursive;
-        color: grey;
+        color: $silver-chalice;
     }
 }
 
@@ -73,23 +76,30 @@ export default {
     }
 
     h3 {
-        color: burlywood;
+        color: $driftwood;
         font-family: 'Abril Fatface', cursive;
     }
 
     p {
-        color: black;
+        color: $emperor;
     }
 }
 
 button {
     font-size: 20px;
-    color: burlywood;
-    border: 2px solid burlywood;
+    color: $driftwood;
+    border: 2px solid $driftwood;
 }
 
 .msProfileImage img{
     border-radius: 9999px;
+}
+
+.msProfileName {
+    p {
+        font-weight: bold;
+        color: $driftwood;
+    }
 }
 
 </style>

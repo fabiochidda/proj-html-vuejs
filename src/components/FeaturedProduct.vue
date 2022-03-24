@@ -33,6 +33,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/scss/colors.scss';
 
 .msFeaturedProductBG {
     height: 400px;
@@ -40,35 +41,41 @@ export default {
     background-image: url(../assets/img/avadabarbers-cta-background.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    border-top: 5px solid burlywood;
+    border-top: 5px solid $driftwood;
 }
 
 .msFeaturedProductInfo {
     height: 100%;
     padding: 50px;
-    background-color: black;
-    border-top: 5px solid burlywood;
+    background-color: $cod-gray;
+    border-top: 5px solid $driftwood;
 }
 
 .msFeaturedProductTitle {
 
     p {
         font-weight: bold;
-        color: burlywood;
+        color: $driftwood;
         margin: 0;
     }
 
     h2 {
         font-size: 60px;
         font-family: 'Abril Fatface', cursive;
-        color: grey;
+        color: $silver-chalice;
+    }
+}
+
+.msFeaturedProductDescription {
+    p {
+        color: $emperor;
     }
 }
 
 button {
     font-size: 20px;
-    color: burlywood;
-    border: 2px solid burlywood;
+    color: $driftwood;
+    border: 2px solid $driftwood;
 }
 
 </style>

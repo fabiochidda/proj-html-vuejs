@@ -22,7 +22,7 @@
                         </div>
                         <div class="msFooterLinks">
                             <p>FOLLOW US</p>
-                            <ul class="d-flex justify-content-center">
+                            <ul class="d-flex justify-content-center gap-3">
                                 <li v-for="(el, i) in footerLinks" :key="i" ><a :href="el.href"><i class="fa-brands " :class="el.icon"></i></a></li>
                             </ul>
                         </div>
@@ -71,33 +71,46 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/scss/colors.scss';
 
 ul {
     padding: 0;
 }
 
+a {
+    color: currentColor;
+}
+
 .msFooterContainer {
-    background: black;
+    background: $cod-gray;
     padding: 0;
 }
 
 .msFooterText {
     p {
         margin: 0;
+        color: $emperor;
     }
 }
 
 button {
     font-size: 20px;
-    color: burlywood;
-    border: 2px solid burlywood;
+    color: $driftwood;
+    border: 2px solid $driftwood;
+}
+
+.msFooterLinks {
+    p {
+        color: $emperor;
+    }
 }
 
 .msCopyright {
-    background-color: grey;
+    background-color: $cod-gray-light;
 
     p {
         margin: 0;
+        color: $emperor;
     }
 }
 </style>
