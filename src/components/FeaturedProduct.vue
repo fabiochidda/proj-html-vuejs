@@ -35,6 +35,10 @@ export default {
 <style scoped lang="scss">
 @import '../assets/scss/colors.scss';
 
+.msContainer {
+    transform: translateY(-30px);
+}
+
 .msFeaturedProductBG {
     height: 400px;
     width: 400px;

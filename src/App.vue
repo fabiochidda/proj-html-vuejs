@@ -19,7 +19,7 @@
     <div class="container-fluid">
       <Reviews />
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid msBlogContainer">
       <BlogPosts />
     </div>
     <Footer />
@@ -54,6 +54,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import './assets/scss/colors.scss';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -74,5 +76,9 @@ export default {
 
 ul li {
   list-style: none;
+}
+
+.msBlogContainer {
+  background-color: $ebb;
 }
 </style>
