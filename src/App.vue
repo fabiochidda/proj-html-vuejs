@@ -19,6 +19,12 @@
     <div class="container-fluid">
       <Reviews />
     </div>
+    <div class="container-fluid">
+      <BlogPosts />
+    </div>
+    <div class="container-fluid">
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -30,6 +36,8 @@ import Services from './components/Services.vue'
 import Products from './components/Products.vue'
 import FeaturedProduct from './components/FeaturedProduct.vue'
 import Reviews from './components/Reviews.vue'
+import BlogPosts from './components/BlogPosts.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
@@ -41,6 +49,8 @@ export default {
     Products,
     FeaturedProduct,
     Reviews,
+    BlogPosts,
+    Footer,
   }
 }
 </script>
