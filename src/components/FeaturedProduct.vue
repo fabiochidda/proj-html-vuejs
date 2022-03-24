@@ -33,14 +33,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.container {
-    position: relative;
-}
-
-.msContainer {
-    position: absolute;
-    top: -30px;
-}
 
 .msFeaturedProductBG {
     height: 400px;

@@ -16,6 +16,9 @@
     <div class="contianer-fluid">
       <FeaturedProduct />
     </div>
+    <div class="container-fluid">
+      <Reviews />
+    </div>
   </div>
 </template>
 
@@ -26,6 +29,7 @@ import ProBarber from './components/ProBarber.vue'
 import Services from './components/Services.vue'
 import Products from './components/Products.vue'
 import FeaturedProduct from './components/FeaturedProduct.vue'
+import Reviews from './components/Reviews.vue'
 
 export default {
   name: 'App',
@@ -36,6 +40,7 @@ export default {
     Services,
     Products,
     FeaturedProduct,
+    Reviews,
   }
 }
 </script>
