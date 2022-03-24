@@ -9,31 +9,13 @@
           </div>
       </div>
       <div class="row justify-content-center text-center pt-5">
-          <div class="col-3">
+          <div v-for="(el, i) in services" :key="i" class="col-3">
               <div class="msProductImage">
                   <figure>
-                      <img src="../assets/img/avadabarbers-trimcut-icon-before.png" alt="">
+                      <img :src="el.image" alt="">
                   </figure>
-                  <h3 class="m-4">Trim and Cut</h3>
-                  <p>Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.</p>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="msProductImage">
-                  <figure>
-                      <img src="../assets/img/avadabarbers-washndry-icon.png" alt="">
-                  </figure>
-                  <h3 class="m-4">Wash and Dry</h3>
-                  <p>Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion.</p>                  
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="msProductImage">
-                  <figure>
-                      <img src="../assets/img/avadabarbers-beardtrim-icon.png" alt="">
-                  </figure>
-                  <h3 class="m-4">Beard Tidy</h3>
-                  <p>Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.</p>                  
+                  <h3 class="m-4">{{el.title}}</h3>
+                  <p>{{el.description}}</p>
               </div>
           </div>
       </div>
@@ -48,6 +30,27 @@
 <script>
 export default {
     name: 'msServices',
+    data() {
+        return {
+            services: [
+                {
+                    image: require(`../assets/img/avadabarbers-trimcut-icon-before.png`),
+                    title: 'Trim & Cut',
+                    description: 'Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.',
+                },
+                {
+                    image: require(`../assets/img/avadabarbers-beardtrim-icon.png`),
+                    title: 'Wash & Dry',
+                    description: 'Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion.',
+                },
+                {
+                    image: require(`../assets/img/avadabarbers-trimcut-icon-before.png`),
+                    title: 'Beard Tidy',
+                    description: 'Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.',
+                },
+            ]
+        }
+    }
 }
 </script>
 
