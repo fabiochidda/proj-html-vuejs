@@ -4,11 +4,13 @@
       <Header />
       <Jumbotron />
     </div>
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 msProBarber">
       <ProBarber />
+      <svg class="fusion-big-triangle-candy" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill:#ffffff;padding:0;"><path d="M0 100 L50 2 L100 100 Z"></path></svg>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid msServices">
       <Services />
+      <svg class="fusion-big-triangle-candy" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill:#121315;padding:0;"><path d="M0 100 L50 2 L100 100 Z"></path></svg>
     </div>
     <div class="container-fluid">
       <Products />
@@ -20,6 +22,7 @@
       <Reviews />
     </div>
     <div class="container-fluid msBlogContainer">
+      <svg class="fusion-big-triangle-candy" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill:#ffffff;padding:0;"><path d="M0 100 L50 2 L100 100 Z"></path></svg>
       <BlogPosts />
     </div>
     <Footer />
@@ -56,6 +59,33 @@ export default {
 <style lang="scss">
 @import './assets/scss/colors.scss';
 
+.msProBarber {
+  position: relative;
+
+  .fusion-big-triangle-candy {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    fill: white;
+  }
+}
+
+.msServices {
+  position: relative;
+
+  .fusion-big-triangle-candy {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+  }
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -79,6 +109,18 @@ ul li {
 }
 
 .msBlogContainer {
+  position: relative;
   background-color: $ebb;
+
+  .fusion-big-triangle-candy {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    transform: rotateX(180deg);
+  }
 }
+
 </style>
