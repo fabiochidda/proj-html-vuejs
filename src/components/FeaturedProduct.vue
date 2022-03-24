@@ -80,6 +80,10 @@ button {
     font-size: 20px;
     color: $driftwood;
     border: 2px solid $driftwood;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
 
 </style>
