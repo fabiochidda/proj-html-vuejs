@@ -6,33 +6,12 @@
               <h2>Avada Grooming Products</h2>
           </div>
       </div>
-      <div class="col-3 msProduct text-center">
+      <div v-for="(el, i) in products" :key="i" class="col-3 msProduct text-center">
           <figure>
-              <img src="../assets/img/brush_dark-400x400.png" alt="">
+              <img :src="el.image" alt="">
           </figure>
-          <h3>Brush</h3>
-          <p>$15.00</p>
-      </div>
-      <div class="col-3 msProduct text-center">
-          <figure>
-              <img src="../assets/img/scissors-400x400.png" alt="">
-          </figure>
-          <h3>Scissors</h3>
-          <p>$85.00</p>
-      </div>
-      <div class="col-3 msProduct text-center">
-          <figure>
-              <img src="../assets/img/hot_oil_dark-400x400.png" alt="">
-          </figure>
-          <h3>Hot Oil</h3>
-          <p>$15.00</p>
-      </div>
-      <div class="col-3 msProduct text-center">
-          <figure>
-              <img src="../assets/img/straight_razor_dark-400x400.png" alt="">
-          </figure>
-          <h3>Straight Razor</h3>
-          <p>$30.00</p>
+          <h3>{{el.name}}</h3>
+          <p>{{el.price}}</p>
       </div>
       <div class="col-12 text-center">
           <button class="bg-transparent px-4 py-2" type="button">SHOP OUR PRODUCT RANGE</button>
@@ -43,6 +22,32 @@
 <script>
 export default {
     name: 'msProducts',
+    data() {
+        return {
+            products: [
+                {
+                    image: require(`../assets/img/brush_dark-400x400.png`),
+                    name: 'Brush',
+                    price: '$15.00',
+                },
+                {
+                    image: require(`../assets/img/scissors-400x400.png`),
+                    name: 'Scissors',
+                    price: '$85.00',
+                },
+                {
+                    image: require(`../assets/img/hot_oil_dark-400x400.png`),
+                    name: 'Hot Oil',
+                    price: '$15.00',
+                },
+                {
+                    image: require(`../assets/img/straight_razor_dark-400x400.png`),
+                    name: 'Straight Razor',
+                    price: '$30.00',
+                },
+            ]
+        }
+    }
 }
 </script>
 
