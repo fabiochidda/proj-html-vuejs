@@ -10,6 +10,12 @@
     <div class="container-fluid">
       <Services />
     </div>
+    <div class="container-fluid">
+      <Products />
+    </div>
+    <div class="contianer-fluid">
+      <FeaturedProduct />
+    </div>
   </div>
 </template>
 
@@ -18,6 +24,8 @@ import Header from './components/Header.vue'
 import Jumbotron from './components/Jumbotron.vue'
 import ProBarber from './components/ProBarber.vue'
 import Services from './components/Services.vue'
+import Products from './components/Products.vue'
+import FeaturedProduct from './components/FeaturedProduct.vue'
 
 export default {
   name: 'App',
@@ -26,6 +34,8 @@ export default {
     Jumbotron,
     ProBarber,
     Services,
+    Products,
+    FeaturedProduct,
   }
 }
 </script>
